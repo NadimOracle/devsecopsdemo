@@ -46,7 +46,7 @@ jobs:
       docker_version: latest
 
    - name: run OPA tests
-     run: opa test .rego -v
+     run: opa test . -v
 
 
    
