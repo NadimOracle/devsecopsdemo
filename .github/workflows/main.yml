@@ -37,9 +37,8 @@ jobs:
 
    steps:
    - name: Checkout code
-     uses: actions/checkout@v2,actions/setup-ruby@v1
-     with:
-        ruby-version: 2.7.0
+     uses: actions/checkout@v2
+     
 
    - name: Set up Docker
      uses: docker-practice/actions-setup-docker@v1
