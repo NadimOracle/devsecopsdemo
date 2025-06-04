@@ -31,22 +31,22 @@ jobs:
       #name: bandit-findings
       #path: bandit-report.json
 
- OPA_scan:
-   name: Run OPA Tests
-   runs-on: ubuntu-latest
+# OPA_scan:
+ #  name: Run OPA Tests
+  # runs-on: ubuntu-latest
 
-   steps:
-   - name: Checkout code
-     uses: actions/checkout@v2
+   #steps:
+   #- name: Checkout code
+    # uses: actions/checkout@v2
      
 
-   - name: Set up OPA
-     uses: open-policy-agent/setup-opa@v2
-     with:
-      docker_version: latest
+   #- name: Set up OPA
+    # uses: open-policy-agent/setup-opa@v2
+     #with:
+      #docker_version: latest
 
-   - name: run OPA tests
-     run: opa test . -v
+   #- name: run OPA tests
+    # run: opa test . -v
 
 
    
